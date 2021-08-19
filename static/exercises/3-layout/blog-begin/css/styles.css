@@ -11,7 +11,6 @@ body {
     width: 80%;
     margin: 0 auto;
 }
-
 header {
     display: flex;
     flex-flow: row nowrap;
@@ -38,8 +37,8 @@ header {
 nav ul {
     display: flex;
     list-style-type: none;
-    border-top: 1px solid pink;
-    border-bottom: 1px solid red;
+    border-top: 1px solid #A61F11;
+    border-bottom: 1px solid #DA0090;
     justify-content: center;
 }
 nav li {
@@ -47,10 +46,14 @@ nav li {
     padding :0rem 1rem;
     border-radius: 20px;
 }
+nav a:hover {
+    text-decoration: none;
+    color: #73352E;
+} /*
 .imgfloatleft{
     float:left;
     margin: 1rem;
-}
+} 
 article {
     margin: 0 auto;
     padding: 0rem 1rem;
@@ -58,7 +61,23 @@ article {
     display: inline-block;
 
 }
+article img {
+    border-radius: 20px;
+}
 .article:after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+article {
+    margin: 2rem 0;
+}
+article img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border-radius: 1rem;
+}
+article:after {
     content: "";
     display: table;
     clear: both;
@@ -79,23 +98,20 @@ a {
 a:hover {
     text-decoration: underline;
 }
+section {
+    border-bottom: 1px solid #DA0090;
+    margin-bottom: 0.3rem;
+}
 .posted {
     font-size: 0.8rem;
     color: #89A611;
 }
-section {
-    border-bottom: 1px solid green;
-    margin: 0.5rem 0rem;
-}
 footer {
     text-align: center;
     font-size: 0.8rem;
-    border-top: 1px solid red;
+    border-top: 1px solid #A61F11;
     display: flex;
     flex-flow: column nowrap;
-}
-footer p {
-    text-align: center;
 }
 footer ul {
     margin: 0;
@@ -104,6 +120,4 @@ footer ul {
 }
 footer li {
     display: inline-block;
-    border: 1px solid red;
-
 }
